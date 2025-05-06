@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test cases</title>
+  </head>
+  <body>
+    <h1>Test cases</h1>
+    <p>Test cases for the background image.</p>
+    <ul class="links"></ul>
+  </body>
+  <script>
+    let result = fetch("./index.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const links = document.querySelector(".links");
+        data.forEach((item) => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="${item}">${item}</a>`;
+          links.appendChild(li);
+        });
+      })
+      .catch((error) => console.error("Error fetching JSON:", error));
+  </script>
+</html>

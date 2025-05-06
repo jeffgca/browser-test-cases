@@ -1,0 +1,31 @@
+{
+  "name": "browser-test-cases",
+  "version": "1.0.0",
+  "description": "quick mini-site for browser bug test cases.",
+  "main": "index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "JeffG",
+    "email": "jeff@eko-recordings.ca",
+    "url": ""
+  },
+  "contributors": [],
+  "scripts": {
+    "build": "node index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
